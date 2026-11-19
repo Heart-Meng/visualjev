@@ -1,22 +1,49 @@
-# JevAdvBench website
+# VisualJevBench
 
-Zero-dependency static landing page for the JevAdvBench project. It can be deployed directly with GitHub Pages.
+Official project website for **VisualJevBench**, a benchmark for evaluating adversarial robustness and visual reasoning in vision-language models.
 
-## Local preview
+The website is implemented as a lightweight, dependency-free static site and can be deployed directly through GitHub Pages.
 
-Open `index.html` directly, or run any static server in this directory:
+## Project status
+
+The current version is the initial website scaffold. It includes the project introduction, benchmark overview, qualitative example area, citation block, author list, and responsive layouts. Dataset statistics, experiment galleries, paper links, and Hugging Face resources will be added as they are finalized.
+
+## Repository structure
+
+```text
+.
+├── index.html      # Main project page
+├── styles.css      # Visual design and responsive layout
+├── app.js          # Small client-side interactions
+├── .nojekyll       # GitHub Pages configuration
+└── README.md       # Project documentation
+```
+
+## Run locally
+
+No build step is required. Open `index.html` in a browser, or start a local server:
 
 ```bash
 python -m http.server 8000
 ```
 
-## Before launch
+Then visit <http://localhost:8000>.
 
-1. Replace the GitHub link and paper/email placeholders in `index.html`.
-2. Update the four benchmark statistics after the dataset is finalized.
-3. Put qualitative images under `assets/` and replace the example placeholder.
-4. Add the Hugging Face dataset/model URLs and the final BibTeX entry.
-5. Enable GitHub Pages from repository Settings → Pages → Deploy from branch → `main` / `/ (root)`.
+## Deployment
+
+1. Open the repository **Settings → Pages**.
+2. Select **Deploy from a branch**.
+3. Select the `main` branch and the `/ (root)` folder.
+4. Save and wait for the Pages deployment to finish.
+
+## Information to add before the final release
+
+- Official paper, arXiv, and project links
+- Dataset size, task categories, and evaluated models
+- Hugging Face dataset or model links
+- Qualitative result images and failure-case galleries
+- Reproducibility instructions and evaluation scripts
+- Final BibTeX entry and contact email
 
 ## Authors
 
