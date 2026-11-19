@@ -1,63 +1,9 @@
 <!doctype html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="VisualJevBench — a benchmark for evaluating adversarial robustness in visual language models." />
-  <title>VisualJevBench — Visual Adversarial Benchmark</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <div class="noise"></div>
-  <header class="site-header">
-    <a class="brand" href="#top"><span class="brand-mark">V</span><span>VisualJevBench</span></a>
-    <nav>
-      <a href="#about">About</a><a href="#benchmark">Benchmark</a><a href="#examples">Examples</a><a href="#citation">Citation</a>
-    </nav>
-    <a class="button button-small" href="https://github.com/Heart-Meng/visualjev" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
-  </header>
-
-  <main id="top">
-    <section class="hero wrap">
-      <div class="hero-copy">
-        <p class="eyebrow"><span class="dot"></span> Visual adversarial evaluation</p>
-        <h1>Seeing beyond<br /><em>the obvious.</em></h1>
-        <p class="lede">VisualJevBench is a benchmark for understanding how visual language models respond when the image, the question, and the evidence do not quite agree.</p>
-        <div class="hero-actions"><a class="button" href="#benchmark">Explore benchmark <span>↓</span></a><a class="text-link" href="#about">Read the paper <span>↗</span></a></div>
-      </div>
-      <div class="hero-art" aria-label="Abstract visual benchmark illustration">
-        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="core"><span>JEV</span><small>ADV</small></div>
-        <div class="tag tag-a">image + prompt</div><div class="tag tag-b">robustness</div><div class="tag tag-c">reasoning</div>
-      </div>
-    </section>
-
-    <section id="about" class="section wrap split">
-      <div><p class="eyebrow">01 / The idea</p><h2>Stress-testing<br />visual reasoning.</h2></div>
-      <div class="section-copy"><p>Modern vision-language models can look remarkably capable—until a small change in the visual input or prompt reveals a brittle shortcut. VisualJevBench provides a structured way to measure these failures.</p><p>We study adversarial examples across visual question answering, object grounding, and multimodal reasoning, with reproducible evaluation protocols and human-readable failure cases.</p></div>
-    </section>
-
-    <section id="benchmark" class="section section-dark">
-      <div class="wrap"><p class="eyebrow">02 / Benchmark at a glance</p><div class="stats"><div><strong>—</strong><span>Tasks</span></div><div><strong>—</strong><span>Images</span></div><div><strong>—</strong><span>Models evaluated</span></div><div><strong>2026</strong><span>First release</span></div></div>
-        <div class="benchmark-grid"><article><span class="card-number">01</span><h3>Visual perturbation</h3><p>Controlled image edits expose sensitivity to local and global visual changes.</p></article><article><span class="card-number">02</span><h3>Question pressure</h3><p>Prompt variants test whether models preserve evidence-grounded answers.</p></article><article><span class="card-number">03</span><h3>Failure analysis</h3><p>Every result is paired with artifacts that make the failure inspectable.</p></article></div>
-      </div>
-    </section>
-
-    <section id="examples" class="section wrap"><div class="section-heading"><div><p class="eyebrow">03 / Qualitative examples</p><h2>Make failures<br />visible.</h2></div><p class="muted">Sample panels are ready for your experiment outputs. Replace the placeholders in <code>app.js</code> when the dataset is finalized.</p></div>
-      <div class="examples-grid"><div class="example visual-placeholder"><span>image preview</span><div class="crosshair"></div></div><div class="example-text"><span class="pill">Example 01 · VQA</span><h3>When the answer follows the prior—not the pixels.</h3><p>A compact gallery of clean inputs, adversarial inputs, model responses, and evaluation labels will live here.</p><a class="text-link" href="#citation">See protocol <span>→</span></a></div></div>
-    </section>
-
-    <section class="section section-accent"><div class="wrap cta"><div><p class="eyebrow">04 / Coming next</p><h2>Built to be<br /><em>reproducible.</em></h2></div><div><p>Dataset cards, Hugging Face artifacts, evaluation scripts, and full result tables will be linked here as they become available.</p><a class="button button-light" href="mailto:your-email@example.com">Get in touch <span>↗</span></a></div></div></section>
-
-    <section id="citation" class="section wrap citation"><p class="eyebrow">05 / Citation</p><div class="citation-box"><pre>@article{jevadvbench2026,
-  title  = {VisualJevBench: A Benchmark for Visual Adversarial Evaluation},
-  author = {Zeng, Li and Zeng, Yeqi and Liang, Hengkai and Wang, Shiguo and Xie, Meng and Ye, Zeyu and Zhang, Jinheng and Wang, Xianlong and Zhou, Ziqi and Zhang, Hangtao},
-  year   = {2026}
-}</pre><button class="copy-button" id="copyCitation">Copy citation</button></div></section>
-  </main>
-  <footer class="site-footer wrap"><span>© 2026 VisualJevBench</span><span>Made for reliable visual intelligence.</span></footer>
-  <script src="app.js"></script>
-</body>
-</html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="VisualJevBench: visual adversarial robustness for typed decision models."><title>VisualJevBench</title><link rel="stylesheet" href="style.css"></head><body>
+<header><a class="brand" href="#">V<span>J</span>B <small>VisualJevBench</small></a><nav aria-label="Main navigation"><a href="#overview">Overview</a><a href="#benchmark">Benchmark</a><a href="#method">ABPS</a><a href="#results">Results</a><a href="#resources">Resources ↗</a></nav></header>
+<main><section class="hero"><div class="eyebrow">VISUAL ROBUSTNESS · TYPED DECISIONS</div><h1>Visual<span>Jev</span>Bench</h1><h2>A Benchmark and Black-Box Attacks<br>for Visual Typed Decision Models</h2><p class="authors">Li Zeng · Yeqi Zeng · Hengkai Liang · Shiguo Wang · Meng Xie · Zeyu Ye · Jinheng Zhang · Xianlong Wang · Ziqi Zhou · Hangtao Zhang</p><p class="intro">How robust are structured decisions when the image changes?<br>A systematic study of visual manipulations, black-box search,<br class="desktop"> and attacks that transfer to unseen images.</p><div class="links"><button disabled>Paper · Coming soon</button><a class="primary" href="https://github.com/Heart-Meng/visualjev">↗ GitHub</a><button disabled>🤗 Dataset · Coming soon</button><a href="#results">Explore results ↓</a></div><div class="stats"><div><b>800</b><span>Images</span></div><div><b>3,200</b><span>Typed questions</span></div><div><b>8</b><span>Scenarios</span></div><div><b>4 × 4</b><span>Types × attack surfaces</span></div></div></section>
+<section id="overview"><div class="eyebrow">01 / THE BIG PICTURE</div><h2>One image. Four decisions.<br>Multiple ways to mislead.</h2><p>Typed decision models return structured answers rather than free-form text. VisualJevBench evaluates how direct image manipulations affect binary verification, option selection, scoring, and localization.</p><figure><a href="assets/overview.png" target="_blank" rel="noopener"><img src="assets/overview.png" alt="Paper Figure 1: benign images and four visual attack surfaces across Noul, Choice, Score, and Box" width="1106" height="910"></a><figcaption>From the paper, Figure 1. Columns show question types; rows show benign inputs and four attack surfaces. Boxes visualize ground-truth or misled predictions. Click to enlarge.</figcaption></figure><article class="abstract"><h3>Abstract / research overview</h3><p>We introduce VisualJevBench, a benchmark comprising 800 images and 3,200 questions across eight scenarios. It covers four visual attack surfaces: typographic manipulation, visual evidence spoofing, target selection interference, and geometric transformation. Adaptive Black-Box Parameter Search (ABPS) uses typed-output feedback to search for effective manipulations, both for individual images and for universal configurations applied to unseen images and new scenarios without further optimization.</p></article></section>
+<section id="benchmark"><div class="eyebrow">02 / BENCHMARK</div><h2>Structured outputs. Shared visual evidence.</h2><p>Each image is paired with one question of each native type. Select a type to explore its evaluation.</p><div class="tabs" role="group" aria-label="Question types"><button data-type="Noul" aria-pressed="true">Noul</button><button data-type="Choice" aria-pressed="false">Choice</button><button data-type="Score" aria-pressed="false">Score</button><button data-type="Box" aria-pressed="false">Box</button></div><article id="type-detail" aria-live="polite"></article><div class="cards"><article><span>01 / TEXT</span><h3>Typographic manipulation</h3><p>Embed misleading text into the visual input.</p></article><article><span>02 / EVIDENCE</span><h3>Visual evidence spoofing</h3><p>Present fabricated visual cues as supporting evidence.</p></article><article><span>03 / ATTENTION</span><h3>Target selection interference</h3><p>Redirect selection toward unintended objects or regions.</p></article><article><span>04 / GEOMETRY</span><h3>Geometric transformation</h3><p>Alter image orientation or perspective.</p></article></div></section>
+<section id="method"><div class="eyebrow">03 / METHOD</div><h2>ABPS: search with typed feedback.</h2><p>Adaptive Black-Box Parameter Search optimizes image manipulation parameters using model responses, without requiring gradients or internal model access.</p><ol class="steps"><li><b>Propose</b><p>Select an attack surface and manipulation parameters.</p></li><li><b>Render & query</b><p>Apply the manipulation and obtain a typed decision.</p></li><li><b>Evaluate & update</b><p>Use typed-output feedback to guide subsequent proposals.</p></li></ol><div class="cards two"><article><h3>Image-specific search</h3><p>Search for effective configurations for individual inputs.</p></article><article><h3>Universal search</h3><p>Select configurations on training images, freeze them, and apply them to held-out images and new scenarios without further optimization.</p></article></div></section>
+<section id="results"><div class="eyebrow">04 / FINDINGS</div><h2>Visual changes can steer typed decisions.</h2><p>Selected results reported in the supplied manuscript on <code>jev-1.14.0</code>. These figures describe different evaluation settings and should not be read as a direct ranking.</p><div class="cards results"><article><b>69.6<span>%</span></b><h3>Image-specific attacks</h3><p>Attack success rate of up to 69.6%.</p></article><article><b>33.15<span>%</span></b><h3>Universal attacks</h3><p>Average ASR on unseen images without further optimization.</p></article><article><b>40.09<span>%</span></b><h3>Cross-scenario transfer</h3><p>Average ASR for geometric transformations.</p></article></div><aside><b>What counts as success?</b><p>ASR measures the proportion of clean-correct instances where a valid image manipulation induces an incorrect decision. Correctness is evaluated by question type; attacks are evaluated under answer-preserving constraints. See the paper for eligibility, thresholds, and aggregation details.</p></aside></section>
+<section id="resources"><div class="eyebrow">05 / OPEN ARTIFACTS</div><h2>Build on VisualJevBench.</h2><div class="cards two"><a class="resource" href="https://github.com/Heart-Meng/visualjev"><h3>GitHub repository ↗</h3><p>Project repository. Experiment release to be announced.</p></a><article><h3>Dataset & Hugging Face</h3><p>Coming soon · Images, typed questions, splits, and release documentation.</p></article></div><div class="citation"><h3>Citation</h3><p>BibTeX will be added with the public paper release and confirmed author information.</p></div></section></main><footer><b>VisualJevBench</b><span>Visual robustness for typed decision models.</span><a href="#">Back to top ↑</a></footer><script src="site.js"></script></body></html>
