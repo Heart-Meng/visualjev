@@ -19,7 +19,7 @@ Li Zeng · Yeqi Zeng · Hengkai Liang · Shiguo Wang · Meng Xie · Zeyu Ye · J
 
 ## Contact
 
-For questions, collaboration, or release-related inquiries, please contact [Meng Xie](mailto:xiemengl595@163.com).
+For questions, collaboration, or release-related inquiries, please contact Meng Xie at xiemengl595@163.com.
 
 ## Repository files
 
