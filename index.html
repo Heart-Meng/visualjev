@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="JevAdvBench — a benchmark for evaluating adversarial robustness in visual language models." />
+  <title>JevAdvBench — Visual Adversarial Benchmark</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise"></div>
+  <header class="site-header">
+    <a class="brand" href="#top"><span class="brand-mark">J</span><span>JevAdvBench</span></a>
+    <nav>
+      <a href="#about">About</a><a href="#benchmark">Benchmark</a><a href="#examples">Examples</a><a href="#citation">Citation</a>
+    </nav>
+    <a class="button button-small" href="https://github.com/Heart-Meng/visualjev" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
+  </header>
+
+  <main id="top">
+    <section class="hero wrap">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="dot"></span> Visual adversarial evaluation</p>
+        <h1>Seeing beyond<br /><em>the obvious.</em></h1>
+        <p class="lede">JevAdvBench is a benchmark for understanding how visual language models respond when the image, the question, and the evidence do not quite agree.</p>
+        <div class="hero-actions"><a class="button" href="#benchmark">Explore benchmark <span>↓</span></a><a class="text-link" href="#about">Read the paper <span>↗</span></a></div>
+      </div>
+      <div class="hero-art" aria-label="Abstract visual benchmark illustration">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="core"><span>JEV</span><small>ADV</small></div>
+        <div class="tag tag-a">image + prompt</div><div class="tag tag-b">robustness</div><div class="tag tag-c">reasoning</div>
+      </div>
+    </section>
+
+    <section id="about" class="section wrap split">
+      <div><p class="eyebrow">01 / The idea</p><h2>Stress-testing<br />visual reasoning.</h2></div>
+      <div class="section-copy"><p>Modern vision-language models can look remarkably capable—until a small change in the visual input or prompt reveals a brittle shortcut. JevAdvBench provides a structured way to measure these failures.</p><p>We study adversarial examples across visual question answering, object grounding, and multimodal reasoning, with reproducible evaluation protocols and human-readable failure cases.</p></div>
+    </section>
+
+    <section id="benchmark" class="section section-dark">
+      <div class="wrap"><p class="eyebrow">02 / Benchmark at a glance</p><div class="stats"><div><strong>—</strong><span>Tasks</span></div><div><strong>—</strong><span>Images</span></div><div><strong>—</strong><span>Models evaluated</span></div><div><strong>2026</strong><span>First release</span></div></div>
+        <div class="benchmark-grid"><article><span class="card-number">01</span><h3>Visual perturbation</h3><p>Controlled image edits expose sensitivity to local and global visual changes.</p></article><article><span class="card-number">02</span><h3>Question pressure</h3><p>Prompt variants test whether models preserve evidence-grounded answers.</p></article><article><span class="card-number">03</span><h3>Failure analysis</h3><p>Every result is paired with artifacts that make the failure inspectable.</p></article></div>
+      </div>
+    </section>
+
+    <section id="examples" class="section wrap"><div class="section-heading"><div><p class="eyebrow">03 / Qualitative examples</p><h2>Make failures<br />visible.</h2></div><p class="muted">Sample panels are ready for your experiment outputs. Replace the placeholders in <code>app.js</code> when the dataset is finalized.</p></div>
+      <div class="examples-grid"><div class="example visual-placeholder"><span>image preview</span><div class="crosshair"></div></div><div class="example-text"><span class="pill">Example 01 · VQA</span><h3>When the answer follows the prior—not the pixels.</h3><p>A compact gallery of clean inputs, adversarial inputs, model responses, and evaluation labels will live here.</p><a class="text-link" href="#citation">See protocol <span>→</span></a></div></div>
+    </section>
+
+    <section class="section section-accent"><div class="wrap cta"><div><p class="eyebrow">04 / Coming next</p><h2>Built to be<br /><em>reproducible.</em></h2></div><div><p>Dataset cards, Hugging Face artifacts, evaluation scripts, and full result tables will be linked here as they become available.</p><a class="button button-light" href="mailto:your-email@example.com">Get in touch <span>↗</span></a></div></div></section>
+
+    <section id="citation" class="section wrap citation"><p class="eyebrow">05 / Citation</p><div class="citation-box"><pre>@article{jevadvbench2026,
+  title  = {JevAdvBench: A Benchmark for Visual Adversarial Evaluation},
+  author = {Zeng, Li and Zeng, Yeqi and Liang, Hengkai and Wang, Shiguo and Xie, Meng and Ye, Zeyu and Zhang, Jinheng and Wang, Xianlong and Zhou, Ziqi and Zhang, Hangtao},
+  year   = {2026}
+}</pre><button class="copy-button" id="copyCitation">Copy citation</button></div></section>
+  </main>
+  <footer class="site-footer wrap"><span>© 2026 JevAdvBench</span><span>Made for reliable visual intelligence.</span></footer>
+  <script src="app.js"></script>
+</body>
+</html>
